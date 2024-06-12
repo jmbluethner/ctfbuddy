@@ -4,6 +4,7 @@ import RouterViewExploration from "./views/router/exploration.js";
 import RouterViewCookies from "./views/router/cookies.js";
 import RouterViewLocalStorage from "./views/router/localstorage.js";
 import RouterViewSources from "./views/router/sources.js";
+import RouterViewHiddenFields from "./views/router/hidden_fields.js";
 
 export const routes = [
     {
@@ -20,6 +21,11 @@ export const routes = [
         path: '/exploration',
         name: 'Exploration',
         component: RouterViewExploration
+    },
+    {
+        path: '/hiddenfields',
+        name: 'Hidden Fields',
+        component: RouterViewHiddenFields
     },
     {
         path: '/cookies',

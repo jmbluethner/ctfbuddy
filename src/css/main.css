@@ -96,12 +96,18 @@ body #main #main_section .inner {
 }
 html #main #main_section .inner .left,
 body #main #main_section .inner .left {
-  width: 170px;
+  width: 160px;
+  margin-right: 10px;
 }
 html #main #main_section .inner .left ul a,
 body #main #main_section .inner .left ul a {
   display: block;
   color: var(--accent-two) !important;
+}
+html #main #main_section .inner .left ul a:hover,
+body #main #main_section .inner .left ul a:hover {
+  background: var(--accent-two);
+  color: var(--text-secondary) !important;
 }
 html #main #main_section .inner .right,
 body #main #main_section .inner .right {
@@ -119,5 +125,13 @@ html #main #main_section .inner .right #router_container h1,
 body #main #main_section .inner .right #router_container h1 {
   padding: 0;
   margin: 0 0 1em 0;
+}
+html #main #main_section .inner .right #router_container section#exploration span.failed,
+body #main #main_section .inner .right #router_container section#exploration span.failed {
+  color: var(--error);
+}
+html #main #main_section .inner .right #router_container section#exploration span.success a,
+body #main #main_section .inner .right #router_container section#exploration span.success a {
+  color: var(--success) !important;
 }
 /*# sourceMappingURL=main.css.map */

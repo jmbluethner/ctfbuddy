@@ -1,3 +1,3 @@
 export const paths = [
-    'wp-admin','admin','login','admin','cpanel','zabbix','backend','phpinfo.php','hidden','private','status'
+    'robots.txt','sitemap.xml','wp-admin','admin','login','cpanel','zabbix','backend','phpinfo.php','hidden','private','status','typo3','siteadmin','secret'
 ]

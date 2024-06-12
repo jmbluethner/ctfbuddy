@@ -92,13 +92,19 @@ html, body {
         min-height: 100%;
 
         .left {
-          width: 170px;
+          width: 160px;
+          margin-right: 10px;
 
           ul {
 
             a {
               display: block;
               color: var(--accent-two)!important;
+
+              &:hover {
+                background: var(--accent-two);
+                color: var(--text-secondary)!important;
+              }
             }
           }
         }
@@ -115,6 +121,22 @@ html, body {
             h1 {
               padding: 0;
               margin: 0 0 1em 0;
+            }
+
+            section {
+
+              &#exploration {
+
+                span.failed {
+                  color: var(--error);
+                }
+                span.success {
+
+                  a {
+                    color: var(--success)!important;
+                  }
+                }
+              }
             }
           }
         }
