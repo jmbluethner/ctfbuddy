@@ -1,0 +1,13 @@
+:root {
+  --primary: white;
+  --secondary: #000814;
+  --tertiary: #001d3d;
+  --accent-one: #E02380;
+  --accent-two: #4573ff;
+  --error: #EF3B1C;
+  --success: #25ad19;
+  --text-primary: var(--secondary);
+  --text-secondary: var(--primary);
+  --col-link: var(--accent-one);
+}
+/*# sourceMappingURL=colors.css.map */
