@@ -58,6 +58,14 @@ button.primary:hover {
   font-weight: 900;
   box-shadow: 0 0 10px var(--shadow);
 }
+button.cli {
+  color: var(--text-secondary);
+  margin: 0;
+  padding: 0;
+}
+button.cli:hover {
+  color: var(--accent-one) !important;
+}
 section {
   display: block;
 }
@@ -84,7 +92,17 @@ img {
 }
 p {
   color: var(--text-col-light);
-  line-height: 25px;
+  margin: 0;
+  padding: 0;
+}
+p.error {
+  color: var(--error) !important;
+}
+p.warning {
+  color: var(--warning) !important;
+}
+p.success {
+  color: var(--success) !important;
 }
 /* Transitions */
 .v-enter-active,

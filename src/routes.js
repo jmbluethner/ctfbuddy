@@ -5,6 +5,7 @@ import RouterViewCookies from "./views/router/cookies.js";
 import RouterViewLocalStorage from "./views/router/localstorage.js";
 import RouterViewSources from "./views/router/sources.js";
 import RouterViewHiddenFields from "./views/router/hidden_fields.js";
+import RouterViewInjector from "./views/router/injector.js";
 
 export const routes = [
     {
@@ -31,6 +32,11 @@ export const routes = [
         path: '/cookies',
         name: 'Cookies',
         component: RouterViewCookies
+    },
+    {
+        path: '/injector',
+        name: 'XSS Injector',
+        component: RouterViewInjector
     },
     {
         path: '/localstorage',

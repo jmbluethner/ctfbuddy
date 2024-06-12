@@ -6,7 +6,8 @@ export const RouterViewExploration = {
     data: function() {
         return {
             checkedPaths: [],
-            basePath: window.location.origin
+            basePath: window.location.origin,
+            helpText: 'The <b>Exploration</b> module checks a list of common directories and pages, such as robots.txt, and shows if they are available or not based on the HTTP response status code.'
         }
     },
     methods: {
@@ -21,14 +22,18 @@ export const RouterViewExploration = {
                     vue.checkedPaths.push(obj);
                 });
             });
-        }
+        },
+        toggleHelp() {
+            this.$root.helpText = this.helpText;
+            this.$root.showHelp = !this.$root.showHelp;
+        },
     },
     mounted: function() {
         this.explorePaths();
     },
     template: `
         <section id="exploration">
-            <h1>Exploration</h1>
+            <h1>Exploration <button @click="toggleHelp()" class="cli">[help]</button></h1>
             <ul>
                 <li v-for="path in checkedPaths">
                     <span v-if="path.status >= 200 && path.status < 300" class="success"><a target="_blank" :href="basePath + '/' + path.path">[{{path.status}}] {{path.path}}</a></span>

@@ -18,7 +18,8 @@ const app = Vue.createApp({
 
     data: function() {
         return {
-
+            helpText: '',
+            showHelp: ''
         }
     },
 
@@ -50,15 +51,23 @@ const app = Vue.createApp({
         <div id="main_section">
             <div class="inner">
                 <div class="left">
-                    <ul>
-                        <router-link v-for="route in this.$router.options.routes" :key="route.path" :to="route.path">
-                            <span class="cli">
-                                <span class="start"></span> ~/ <span class="end"></span>
-                            </span> {{route.name}}
-                        </router-link>
-                    </ul>
+                    <div class="inner">
+                        <div class="top">
+                            <ul>
+                                <router-link v-for="route in this.$router.options.routes" :key="route.path" :to="route.path" @click="showHelp = false">
+                                    <span class="cli">
+                                        <span class="start"></span> ~/ <span class="end"></span>
+                                    </span> {{route.name}}
+                                </router-link>
+                            </ul>
+                        </div>
+                        <div class="bottom">
+                            <button class="cli" v-if="showHelp" @click="showHelp = false">[CLOSE HELP]</button>
+                        </div>
+                    </div>
                 </div>
                 <div class="right">
+                    <div id="help" v-html="helpText" v-if="showHelp"></div>
                     <div id="router_container">
                         <router-view></router-view>
                     </div>

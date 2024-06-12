@@ -93,23 +93,53 @@ html, body {
 
         .left {
           width: 160px;
+          min-width: 160px;
           margin-right: 10px;
 
-          ul {
+          .inner {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
 
-            a {
-              display: block;
-              color: var(--accent-two)!important;
+            > div {
+              width: 100%;
+            }
+            .top {
+              flex-grow: 1;
 
-              &:hover {
-                background: var(--accent-two);
-                color: var(--text-secondary)!important;
+              ul {
+
+                a {
+                  display: block;
+                  color: var(--accent-two)!important;
+
+                  &:hover {
+                    background: var(--accent-two);
+                    color: var(--text-secondary)!important;
+                  }
+                }
               }
+            }
+            .bottom {
+
             }
           }
         }
         .right {
           flex-grow: 1;
+          position: relative;
+
+          #help {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            max-height: 100%;
+            overflow-y: auto;
+            background: var(--secondary);
+            z-index: 999;
+          }
 
           #router_container {
             width: 100%;
@@ -117,6 +147,7 @@ html, body {
             border: none;
             outline: none;
             overflow: auto;
+            position: relative;
 
             h1 {
               padding: 0;
@@ -124,6 +155,14 @@ html, body {
             }
 
             section {
+              position: relative;
+
+              &#injector {
+
+                > div > span {
+                  display: block;
+                }
+              }
 
               &#exploration {
 

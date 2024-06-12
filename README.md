@@ -13,7 +13,8 @@ _by jmbluethner_
 
 **CTFBuddy** is meant to be a little tool that sits in your Chrome extensions - Always ready to assist you with certain CTF and OSINT specific checks.  
 When doing a lot of web focussed CTF's, you'll notice that in a lot of cases you do more or less the same basic checks. Such as analyzing URL Parameters to check for possible privilege or section escapes, hidden Input fields for value manipulation, and so on.  
-In order to make those basic tasks a bit easier and to save you from repeating them over and over, I came up with **CTFBuddy**.
+In order to make those basic tasks a bit easier and to save you from repeating them over and over, I came up with **CTFBuddy**.  
+**CTFBuddy** doesn't do anything super crazy that you couldn't do by hand, but it reduces your workload so that you don't have to check the HTML source code as many times as you'd usually have to.
 
 # Features
 
@@ -23,4 +24,9 @@ In order to make those basic tasks a bit easier and to save you from repeating t
   - Detailed Cookie analysis.
   - Detailed Local Storage analysis.
   - Checks for all embedded sources, such as JS.
+  - XSS Injection tester.
 - Stylish CLI look
+
+---
+
+_Developed with ♥️ and ☕ by jmbluethner_

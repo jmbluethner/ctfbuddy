@@ -56,6 +56,15 @@ button.primary:hover {
   font-weight: 900;
   box-shadow: 0 0 10px var(--shadow);
 }
+button.cli {
+  color: var(--text-secondary);
+  margin: 0;
+  padding: 0;
+
+  &:hover {
+    color: var(--accent-one)!important;
+  }
+}
 section {
   display: block;
 }
@@ -82,7 +91,18 @@ img {
 }
 p {
   color: var(--text-col-light);
-  line-height: 25px;
+  margin: 0;
+  padding: 0;
+
+  &.error {
+    color: var(--error)!important;
+  }
+  &.warning {
+    color: var(--warning)!important;
+  }
+  &.success {
+    color: var(--success)!important;
+  }
 }
 
 
