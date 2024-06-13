@@ -1,5 +1,7 @@
 import {routes} from "../../routes.js";
 import {log} from "../../js/logger.js";
+import {getCookieByName,setCookie} from "../../js/cookiehandler.js";
+import {loadCss} from "../../js/loader.js";
 
 const router = VueRouter.createRouter({
     history: VueRouter.createWebHashHistory(),
@@ -21,7 +23,8 @@ const app = Vue.createApp({
         return {
             helpText: '',
             showHelp: '',
-            shortcuts: {}
+            shortcuts: {},
+            theme: ''
         }
     },
 
@@ -41,11 +44,32 @@ const app = Vue.createApp({
                     vue.$router.push({path: vue.shortcuts[evt.key]});
                 }
             }
+        },
+        setTheme(theme, update = false) {
+            setCookie('ctfbuddy-theme',theme);
+            this.theme = theme;
+            if(update) {
+                window.location.reload();
+            }
         }
     },
 
     mounted: function() {
+        let vue = this;
         this.setShortcuts();
+        let theme = getCookieByName('ctfbuddy-theme');
+        if(theme) {
+            if(theme === 'default') {
+                loadCss('/css/colors.css');
+            } else {
+                loadCss('/themes/' + theme + '.css');
+            }
+            vue.theme = theme;
+        } else {
+            vue.theme = 'default';
+            vue.setTheme('default');
+            loadCss('/css/colors.css');
+        }
     },
 
     created: async function() {

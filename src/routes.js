@@ -7,6 +7,7 @@ import RouterViewSources from "./views/router/sources.js";
 import RouterViewHiddenFields from "./views/router/hidden_fields.js";
 import RouterViewInjector from "./views/router/injector.js";
 import RouterViewCommentFinder from "./views/router/commnent_finder.js";
+import RouterViewThemes from "./views/router/themes.js";
 
 export const routes = [
     {
@@ -62,5 +63,11 @@ export const routes = [
         name: 'Sources',
         component: RouterViewSources,
         shortcut: 's'
+    },
+    {
+        path: '/themes',
+        name: 'Themes',
+        component: RouterViewThemes,
+        shortcut: 'd'
     }
 ]
