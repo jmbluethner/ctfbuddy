@@ -1,0 +1,33 @@
+{
+  "name": "CTFBuddy",
+  "version": "0.0.1",
+  "description": "An easy to use Chrome extension that helps you with online CTF's and general Web OSINT",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jmbluethner/ctfbuddy.git"
+  },
+  "keywords": [
+    "browser",
+    "webpack",
+    "CTF",
+    "OSINT",
+    "hacking",
+    "tool"
+  ],
+  "author": "jmbluethner",
+  "bugs": {
+    "url": "https://github.com/jmbluethner/ctfbuddy/issues"
+  },
+  "homepage": "https://github.com/jmbluethner/ctfbuddy",
+  "dependencies": {
+    "cross-env": "^7.0.3",
+    "laravel-mix": "^6.0.49",
+    "less": "^4.2.0",
+    "postcss": "^8.4.38",
+    "vue": "^3.4.27",
+    "vue-loader": "^17.4.2",
+    "vue-router": "^4.3.3",
+    "vue-template-compiler": "^2.7.16"
+  }
+}
