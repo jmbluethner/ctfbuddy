@@ -1,3 +1,6 @@
+> ⚠️ THIS PRODUCT IS STILL UNDER CONSTRUCTION AND NOT READY FOR REAL WORLD USE YET!  
+> Please come back later to see, if the project is out of Alpha :)
+
 # CTFBuddy  
 
 _An easy to use Chrome extension that helps you with online CTF's and general Web OSINT._  
