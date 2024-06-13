@@ -5,9 +5,7 @@ _by jmbluethner_
 
 ---
 
-<img src="./docs/ss1.png">
-
-[[_TOC_]]
+<img src="./docs/montage.png">
 
 # Project Aim
 
@@ -19,14 +17,20 @@ In order to make those basic tasks a bit easier and to save you from repeating t
 # Features
 
 - One-Click-Analytics tools for
-  - Automatic Sub-Page exploration for common pages, such as `robots.txt`, `wp-admin` and so on.
-  - Automatic reporting and analysis for URL (GET) Parameters.
+  - Sub-Page exploration for common pages, such as `robots.txt`, `wp-admin` and so on.
+  - Reporting and analysis for URL (GET) Parameters.
+  - Finder for hidden input fields.
   - Detailed Cookie analysis.
   - Detailed Local Storage analysis.
   - Checks for all embedded sources, such as JS.
   - XSS Injection tester.
-- Stylish CLI look
+  - HTML Comment finder.
+- Stylish CLI look.
+- Menu navigation using keyboard shortcuts.
+- Explaining help texts for each module.
+- Solid codebase built on <a href="https://vuejs.org/">Vue.JS</a>.
 
 ---
 
-_Developed with ♥️ and ☕ by jmbluethner_
+_Developed with ♥️ and ☕ by jmbluethner_  
+_Built with <a href="https://vuejs.org/">Vue.JS</a>_
