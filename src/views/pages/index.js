@@ -3,6 +3,12 @@ import {log} from "../../js/logger.js";
 import {getCookieByName,setCookie} from "../../js/cookiehandler.js";
 import {loadCss} from "../../js/loader.js";
 
+/*
+import * as Vue from '../../lib/vue/vue.global.js'
+import * as VueRouter from '../../lib/vue/vue-router.global.js'
+
+ */
+
 const router = VueRouter.createRouter({
     history: VueRouter.createWebHashHistory(),
     // Short for routes: routes
