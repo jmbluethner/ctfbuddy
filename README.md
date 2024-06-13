@@ -16,7 +16,7 @@ In order to make those basic tasks a bit easier and to save you from repeating t
 
 # Features
 
-- One-Click-Analytics tools for
+- Comes with the following **modules**:
   - Sub-Page exploration for common pages, such as `robots.txt`, `wp-admin` and so on.
   - Reporting and analysis for URL (GET) Parameters.
   - Finder for hidden input fields.
