@@ -29,6 +29,39 @@ In order to make those basic tasks a bit easier and to save you from repeating t
 - Menu navigation using keyboard shortcuts.
 - Explaining help texts for each module.
 - Solid codebase built on <a href="https://vuejs.org/">Vue.JS</a>.
+- Support for custom Themes.
+
+# Themes
+
+**Default**
+
+<img width="350px" src="./docs/t_default.png">
+
+**Light**
+
+<img width="350px" src="./docs/t_light.png">
+
+**High Contrast**
+
+<img width="350px" src="./docs/t_high-contrast.png">
+
+**Hacker**
+
+<img width="350px" src="./docs/t_hacker.png">
+
+## Create your own theme
+
+Creating your own theme is super easy!  
+
+> It is recommended to work with `.less` files and using a client side file watcher to compile `less` to `css`. However, you can also just work with `css` files, as the theme loader will always look for `.css` and not `.less` files.
+
+1. Copy `/src/css/colors.less` to `/src/themes/<your-theme-name>.less`
+2. Edit your theme at `/src/themes/<your-theme-name>.less`.
+3. Add your theme in the `themes` Array in `/src/views/router/themes.js` near or at line 6.
+
+> File name and name in the `themes` array must match!
+
+And that's it! Your theme will now appear in the `Themes` module.
 
 ---
 
